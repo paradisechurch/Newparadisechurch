@@ -1,16 +1,16 @@
-const menuToggle = document.querySelector('.menu-toggle');
+const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
 
-if (menuToggle && nav) {
-  menuToggle.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 
   nav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-expanded', 'false');
     });
   });
 }
