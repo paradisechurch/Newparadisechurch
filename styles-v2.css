@@ -443,3 +443,30 @@ a{color:inherit}
   .event{grid-template-columns:1fr}
   .event-date{width:100px}
 }
+
+
+/* Full-width church banner: show the complete uploaded image without cropping */
+.hero-banner-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.hero-banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  margin: 0;
+  object-fit: contain;
+}
+
+/* The banner already contains its own artwork and text, so no overlay is needed. */
+@media (max-width: 600px) {
+  .hero-banner-image {
+    width: 100%;
+    height: auto;
+  }
+}
