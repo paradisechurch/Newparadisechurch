@@ -470,3 +470,25 @@ a{color:inherit}
     height: auto;
   }
 }
+
+/* Pastor portrait and YouTube logo */
+.pastor-photo {
+  display:block;
+  width:100%;
+  height:auto;
+}
+.media-card {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:28px;
+  background:#fff;
+  min-height:340px;
+}
+.media-card img.sermons-logo {
+  display:block;
+  width:min(100%, 380px);
+  height:auto;
+  min-height:0;
+  object-fit:contain;
+}
